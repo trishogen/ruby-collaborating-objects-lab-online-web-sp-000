@@ -22,14 +22,11 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-    if @@all.name == name
-      @@all.name
-    else
+    puts @@all.name
       @name = name
       artist = Artist.new(name)
       self.all << artist
       artist
-    end
   end
 
 end
