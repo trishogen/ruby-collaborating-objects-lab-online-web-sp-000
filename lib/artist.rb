@@ -22,7 +22,7 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-    puts self.all.name
+      self.all.find{|artist| artist.name == name}
       @name = name
       artist = Artist.new(name)
       self.all << artist
