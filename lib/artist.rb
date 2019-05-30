@@ -28,6 +28,7 @@ class Artist
       @name = name
       artist = Artist.new(name)
       self.all << artist
+      artist
     end
   end
 
