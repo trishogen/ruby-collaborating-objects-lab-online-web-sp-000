@@ -21,4 +21,9 @@ class Artist
     @@all << self
   end
 
+  def self.find_or_create_by_name(name)
+    @name = name
+    @@all < self
+  end
+
 end
