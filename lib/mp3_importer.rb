@@ -7,7 +7,8 @@ class MP3Importer
   end
 
   def files
-    Dir.entries(@path)
+    total_files = Dir.entries(@path)
+    puts total_files
   end
 
 end
