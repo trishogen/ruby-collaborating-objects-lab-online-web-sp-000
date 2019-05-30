@@ -22,8 +22,8 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-    if self.all.name[name]
-      self.all.name
+    if @@all.name[name]
+      @@all.name
     else
       @name = name
       artist = Artist.new(name)
