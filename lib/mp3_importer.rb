@@ -10,4 +10,7 @@ class MP3Importer
     Dir.entries(@path).select {|f| !File.directory? f}
   end
 
+  def import
+  end
+
 end
