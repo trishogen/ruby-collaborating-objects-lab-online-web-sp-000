@@ -7,8 +7,7 @@ class MP3Importer
   end
 
   def files
-    total_files = Dir.entries(@path)
-    puts total_files
+    Dir.entries(@path).select {|f| !File.directory? f}
   end
 
 end
