@@ -9,6 +9,7 @@ class Song
     split_name = filename.split(/\s-\s|\.mp3/)
     song = self.new(split_name[1])
     song.artist = Artist.find_or_create_by_name(split_name[0])
+    song
   end
 
 end
